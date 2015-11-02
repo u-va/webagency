@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+      <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+      <title>Web Agency</title>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+      <section id="home">
+         <h1>Web Agency</h1>
+      </section>
+      <header>
+         <nav class="top-bar">
+            <ul class="title-area">
+               <li class="name">
+                  <h1>
+                     <a href="#home">Logo</a>
+                  </h1>
+               </li>
+            </ul>
+            <div class="top-bar-section">
+               <ul class="right">
+                  <li class="active">
+                     <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                     <a href="#">Menu 2</a>
+                  </li>
+                  <li>
+                     <a href="#">Menu 3</a>
+                  </li>
+                  <li>
+                     <a href="#">Menu 4</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <section id="" class="row text-center">
+         <div class="small-12 columns">
+            <ul class="small-block-grid-2">
+               <li>
+                  <h3>Blog & siti web</h3>
+                  <p>Realizzazione di siti...</p>
+               </li>
+               <li>
+                  <h3>E-commerce</h3>
+                  <p>Gestione ...</p>
+               </li>
+               <li>
+                  <h3>Mobile & web app</h3>
+                  <p>App ...</p>
+               </li>
+               <li>
+                  <h3>Servizi di consulenza</h3>
+                  <p>...</p>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section id="" class="row text-center">
+         <div class="small-12 columns">
+            <ul class="small-block-grid-3">
+               <li>Umberto
+                  <p>Marketing director</p>
+               </li>
+               <li>Andrea
+                  <p>Back-end developer</p>
+               </li>
+               <li>Checco
+                  <p>Front-end developer</p>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section id="" class="row">
+         <div class="small-12 small-centered columns">
+            <form action="php/contact.php" class="text-center" method="post" data-abide>
+               <div class="row medium-collapse">
+                  <div class="small-12 small-centered medium-8 large-6 columns">
+                     <span class="fa fa-user fa-lg fa-fw"></span>
+                     <label class="left" for="name">Nome</label>
+                     <input id="name" autocomplete="off" name="name" type="text" required>
+                  </div>
+               </div>
+               <div class="row medium-collapse">
+                  <div class="small-12 small-centered medium-8 large-6 columns">
+                     <span class="fa fa-envelope fa-lg fa-fw"></span>
+                     <label class="left" for="email">Email</label>
+                     <input id="email" autocomplete="off" name="email" pattern="email" type="email" required>
+                  </div>
+               </div>
+               <div class="row medium-collapse">
+                  <div class="small-12 small-centered medium-8 large-6 columns">
+                     <span class="fa fa-pencil fa-lg fa-fw"></span>
+                     <label class="left" for="message">Messaggio</label>
+                     <textarea id="message" name="message" required></textarea>
+                  </div>
+               </div>
+               <button type="submit">
+                  <span class="text">Invia</span>
+                  <span class="fa fa-check fa-lg fa-fw"></span>
+               </button>
+            </form>
+         </div>
+      </section>
+      <footer class="clearfix">
+         <p class="left">2015 &copy; Web che spacca</p>
+         <ul class="inline-list right">
+            <li>
+               <a href="#">
+                  <span class="fa fa-facebook fa-fw"></span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <span class="fa fa-instagram fa-fw"></span>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <span class="fa fa-twitter fa-fw"></span>
+               </a>
+            </li>
+         </ul>
+      </footer>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/foundation/js/foundation.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

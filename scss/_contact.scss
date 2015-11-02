@@ -1,0 +1,100 @@
+$input-padding-left: rem-calc(50);
+
+button {
+   $button-width: 120px;
+   $button-height: $button-width / 2;
+
+   height: $button-height;
+   overflow: hidden;
+   width: $button-width;
+
+   &.sent {
+      .fa-check {
+         top: 0;
+      }
+
+      .text {
+         top: -100%;
+      }
+   }
+
+   .fa-check, .text {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+   }
+
+   .text {
+      top: 0;
+   }
+
+   .fa-check, .text {
+      line-height: $button-height;
+      transition: top .25s;
+   }
+
+   .fa-check {
+      background-color: $success-color;
+      top: 100%;
+   }
+}
+
+form .row {
+   margin-bottom: $form-spacing / 2;
+}
+
+input[type="email"], input[type="text"], textarea {
+   padding-left: $input-padding-left;
+
+   .error & {
+      margin-bottom: $form-spacing;
+   }
+}
+
+label, .fa-envelope, .fa-pencil, .fa-user {
+   position: absolute;
+}
+
+label {
+   left: $input-padding-left;
+   padding: ($form-spacing / 2) 0;
+
+   &.is-writing {
+      font-size: 80%;
+      left: 0;
+      padding-bottom: 0;
+      transform: translateY(-100%);
+
+      @media #{$small-only} {
+         left: $column-gutter / 2;
+      }
+   }
+
+   @media #{$small-only} {
+      left: $input-padding-left + ($column-gutter / 2);
+   }
+}
+
+textarea {
+   min-height: 200px;
+   resize: vertical;
+}
+
+.fa-envelope, .fa-pencil, .fa-user {
+   left: $input-padding-left / 2;
+
+   @media #{$small-only} {
+      left: ($input-padding-left / 2) + ($column-gutter / 2);
+   }
+}
+
+.fa-envelope, .fa-user {
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.fa-pencil {
+   top: ($form-spacing / 2) + ($form-spacing / 4);
+   transform: translateX(-50%);
+}

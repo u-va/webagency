@@ -1,0 +1,21 @@
+{
+  "name": "webagency",
+  "authors": [
+    "Andrea Maiolo",
+    "Umberto Varricchio",
+    "Francesco Neutro"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/andreamaiolo/webagency",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.3"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.4.0"
+  }
+}

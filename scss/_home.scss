@@ -1,0 +1,16 @@
+#home {
+   background: {
+      image: url('../images/hero.jpeg');
+      position: center center;
+      repeat: no-repeat;
+      size: cover;
+   }
+
+   height: 100vh;
+
+   h1 {
+      line-height: 100vh;
+      margin: 0;
+      text-align: center;
+   }
+}
