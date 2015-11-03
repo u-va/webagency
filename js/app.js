@@ -17,3 +17,19 @@ $(document).ready(function() {
       }
    });
 });
+
+$(document).ready(function() {
+
+	$(".apri").click(
+	    function(){
+			$('#overlay').fadeIn('fast');
+			$('#box').fadeIn('slow');
+		});
+
+		$(".chiudi").click(
+	    function(){
+		$('#overlay').fadeOut('fast');
+		$('#box').hide();
+		});
+
+   });
